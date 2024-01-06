@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@400;500&display=swap');
+
+/* Root variables */
+
+:root {
+    /* Fonts */
+    --title: 'Playfair Display', 'serif';
+    --body: 'Merriweather', 'serif';
+
+    /* Colors */
+    --bg: #071330; 
+    --light-base: #ebebeb;
+    --color: #D99326;
+    --light: #99aec2;
+    --darker: #020a1b;
+
+    /* Utils */
+    --box-shadow: 2px 1px 5px 4px solid #fafbfc;
+}
