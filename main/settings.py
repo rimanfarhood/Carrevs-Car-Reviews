@@ -32,7 +32,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-rimanfarhoo-carrevscarr-m8i1k49gnpr.ws-eu107.gitpod.io', 'carrevs-b0c8f9ee1e33.herokuapp.com']
 
-CSRF_TRUSTED_ORIGINS = ['https://carrevs-b0c8f9ee1e33.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = ['https://8000-rimanfarhoo-carrevscarr-m8i1k49gnpr.ws-eu107.gitpod.io', 'https://carrevs-b0c8f9ee1e33.herokuapp.com']
 
 # Application definition
 
@@ -66,6 +66,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'main.urls'
