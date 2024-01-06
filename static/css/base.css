@@ -18,6 +18,31 @@
     --box-shadow: 2px 1px 5px 4px solid #fafbfc;
 }
 
+/* Base */
+
+html, body {
+    height: 100%;
+    background-color: var(--bg);
+    color: var(--light-base);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body);
+}
+
+main {
+    margin-top: 1.5em;
+    flex: 1 0 auto;
+}
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
 /* Header */
 
 .navbar {
