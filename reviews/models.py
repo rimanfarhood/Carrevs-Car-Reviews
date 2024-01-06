@@ -77,3 +77,66 @@ CAR_TYPES = (
     ("truck", "Truck"),
     ("minivan", "Minivan"),
 )
+
+
+class CarModel(models.Model):
+    """
+    Model representing the car information for review
+    """
+    user = models.ForeignKey(
+        User, related_name="review_owner", on_delete=models.CASCADE
+    )
+    make = models.CharField(
+        max_length=20, choices=CAR_MAKE, null=False, blank=False
+    )
+    model = models.CharField(max_length=300, null=False, blank=False)
+    year = models.IntegerField(
+        choices=YEAR_MODEL, default=current_year, null=False, blank=False
+    )
+    fuel = models.CharField(
+        max_length=20, choices=FUEL_TYPE, null=False, blank=False
+    )
+    condition = models.CharField(
+        max_length=5, choices=STATE, null=False, blank=False
+    )
+    engine_size = models.CharField(max_length=10, null=False, blank=False)
+    transmission = models.CharField(
+        max_length=20, choices=GEARBOX, null=False, blank=False
+    )
+    drivetrain = models.CharField(
+        max_length=15, choices=DRIVETRAIN_TYPES, null=False, blank=False
+    )
+    mileage = models.CharField(
+        max_length=25, choices=MILES, null=False, blank=False
+    )
+    price = models.CharField(max_length=15, null=False, blank=False)
+    hp = models.IntegerField(
+        null=False,
+        blank=False,
+        validators=[
+            MinValueValidator(
+                limit_value=66, message='Invalid input, the value is too low'
+            ),
+            MaxValueValidator(
+                limit_value=2012, message='Invalid input, value to high'
+            ),
+        ]
+    )
+    car_type = models.CharField(
+        max_length=10, choices=CAR_TYPES, null=False, blank=False
+    )
+    image = ResizedImageField(
+        size=[1000, None],
+        quality=75,
+        upload_to="reviews/",
+        force_format="WEBP",
+        blank=False,
+        null=False,
+    )
+    image_alt = models.CharField(max_length=100, null=False, blank=False)
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return f"{self.make} - {self.model}"
