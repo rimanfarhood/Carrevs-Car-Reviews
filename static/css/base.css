@@ -17,3 +17,47 @@
     /* Utils */
     --box-shadow: 2px 1px 5px 4px solid #fafbfc;
 }
+
+/* Header */
+
+.navbar {
+    background-color: var(--darker);
+    color: var(--light);
+    border-bottom: 3px solid #000511;
+}
+
+#navbarNav {
+    justify-content: right;
+}
+
+.navbar-toggler-icon, button.navbar-toggler {
+    border: none;
+    color: transparent;
+}
+
+a.nav-link, .navbar-nav .nav-link.active {
+    color: var(--light);
+    font-family: var(--body);
+    letter-spacing: 0.5px;
+}
+
+.logo {
+    font-family: var(--title);
+    font-weight: 500;
+    font-size: 2.2em;
+    padding-left: 5px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.home-icon {
+    height: 2.2em;
+    padding-bottom: 3px;
+}
+
+.active {
+    color: var(--light-base);
+    border-bottom: 1px solid var(--color);
+    font-weight: 500;
+}
+
