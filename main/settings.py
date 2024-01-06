@@ -30,9 +30,15 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
 
-ALLOWED_HOSTS = ['8000-rimanfarhoo-carrevscarr-m8i1k49gnpr.ws-eu107.gitpod.io', 'carrevs-b0c8f9ee1e33.herokuapp.com']
+ALLOWED_HOSTS = [
+    '8000-rimanfarhoo-carrevscarr-m8i1k49gnpr.ws-eu107.gitpod.io',
+    'carrevs-b0c8f9ee1e33.herokuapp.com',
+]
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-rimanfarhoo-carrevscarr-m8i1k49gnpr.ws-eu107.gitpod.io', 'https://carrevs-b0c8f9ee1e33.herokuapp.com']
+CSRF_TRUSTED_ORIGINS = [
+    'https://8000-rimanfarhoo-carrevscarr-m8i1k49gnpr.ws-eu107.gitpod.io',
+    'https://carrevs-b0c8f9ee1e33.herokuapp.com',
+]
 
 # Application definition
 
@@ -57,6 +63,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'crispy_forms',
     'crispy_bootstrap5',
+    'djrichtextfield',
 ]
 
 SITE_ID = 1

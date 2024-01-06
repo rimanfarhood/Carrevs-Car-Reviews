@@ -140,3 +140,43 @@ class CarModel(models.Model):
 
     def __str__(self):
         return f"{self.make} - {self.model}"
+
+
+# Choices for car review
+
+RATING = [
+    (1, "1/5"),
+    (2, "2/5"),
+    (3, "3/5"),
+    (4, "4/5"),
+    (5, "5/5"),
+]
+
+
+class CarReviewModel(CarModel):
+    """
+    Model to create car reviews
+    """
+    drivingexp = models.IntegerField(
+        choices=RATING, null=False, blank=False
+    )
+    acceleration = models.IntegerField(choices=RATING, null=False, blank=False)
+    comfort = models.IntegerField(choices=RATING, null=False, blank=False)
+    safety = models.IntegerField(choices=RATING, null=False, blank=False)
+    practicality = models.IntegerField(choices=RATING, null=False, blank=False)
+    interior = models.IntegerField(choices=RATING, null=False, blank=False)
+    ergonomics = models.IntegerField(choices=RATING, null=False, blank=False)
+    pros = RichTextField(max_length=350, null=False, blank=False)
+    cons = RichTextField(max_length=350, null=False, blank=False)
+    additional = RichTextField(max_length=1500, null=True, blank=True)
+    summary = RichTextField(max_length=500, null=False, blank=False)
+    overall = models.IntegerField(
+        choices=RATING, null=False, blank=False
+    )
+    posted_date = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["-posted_date"]
+
+    def __str__(self):
+        return f"{self.make} - {self.model} {self.user} "
