@@ -9,13 +9,14 @@
 
     /* Colors */
     --bg: #071330; 
-    --light-base: #ebebeb;
+    --light-base: #fff;
     --color: #D99326;
     --light: #99aec2;
     --darker: #020a1b;
+    --darkest: #000511;
 
     /* Utils */
-    --box-shadow: 2px 1px 5px 4px solid #fafbfc;
+    --box-shadow:  1px -1px 7px 0 #000511;
 }
 
 /* Base */
@@ -33,7 +34,7 @@ body {
 }
 
 main {
-    margin-top: 1.5em;
+    margin-top: 2em;
     flex: 1 0 auto;
 }
 
@@ -48,7 +49,8 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
     background-color: var(--darker);
     color: var(--light);
-    border-bottom: 3px solid #000511;
+    border-bottom: 3px solid var(--darkest);
+    --bs-navbar-brand-hover-color: none;
 }
 
 #navbarNav {
@@ -60,10 +62,12 @@ h1, h2, h3, h4, h5, h6 {
     color: transparent;
 }
 
+
 a.nav-link, .navbar-nav .nav-link.active {
     color: var(--light);
     font-family: var(--body);
     letter-spacing: 0.5px;
+    --bs-nav-link-hover-color: none;
 }
 
 .logo {
@@ -72,7 +76,7 @@ a.nav-link, .navbar-nav .nav-link.active {
     font-size: 2.2em;
     padding-left: 5px;
     text-transform: uppercase;
-    color: var(--white);
+    color: var(--light);
 }
 
 .home-icon {
@@ -99,4 +103,27 @@ footer {
 .social-icons {
     height: 2rem;
     margin: 1rem;
+}
+
+/* Buttons */
+
+.button {
+    border-radius: 4px;
+    color: var(--light);
+    border: 1px solid var(--light);
+    background-color: var(--darker);
+}
+
+.button:hover {
+    color: var(--darker);
+    background-color: var(--light);
+}
+
+/* Forms */
+
+.form {
+    width: 90%;
+    margin: 3% auto;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow);
 }
