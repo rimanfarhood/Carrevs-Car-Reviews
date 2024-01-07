@@ -105,10 +105,8 @@ class CarModel(models.Model):
         null=False,
         blank=False,
         validators=[
-            MinValueValidator(
-                limit_value=66, message="Invalid input, the value is too low"
-            ),
-            MaxValueValidator(limit_value=2012, message="Invalid input, value to high"),
+            MinValueValidator(66, message="Invalid input, the value is too low"),
+            MaxValueValidator(2012, message="Invalid input, value to high"),
         ],
     )
     car_type = models.CharField(
