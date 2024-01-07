@@ -12,7 +12,7 @@
     </form>
     <div class="container d-flex flex-row flex-wrap justify-content-center">
         {% for review in reviews %}
-            <a href="#" class="reviews" aria-label="Click to view {{review.make}}">
+            <a href="{% url 'review_detail' review.id %}" class="reviews" aria-label="Click to view {{review.make}}">
                 <div class="card m-3" style="width: 18rem;">
                     <img src="{{review.image.url}}" class="card-img-top" alt="{{review.image_alt}}">
                     <div class="card-body">

@@ -32,7 +32,7 @@ class Reviews(ListView):
         return reviews
 
 
-class CarReviewDetails(DetailView):
+class CarReviewDetail(DetailView):
     template_name = "reviews/review_detail.html"
     model = CarReviewModel
     context_object_name = "review"
