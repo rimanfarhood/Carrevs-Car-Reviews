@@ -32,4 +32,5 @@ class CarReviewModelForm(forms.ModelForm):
             "car_type": "Body Type",
             "image": "Car Image",
             "image_alt": "Describe Image",
+            "drivingexp": "Driving Experience"
         }
