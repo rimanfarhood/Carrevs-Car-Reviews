@@ -122,8 +122,27 @@ footer {
 /* Forms */
 
 .form {
-    width: 90%;
+    width: 80%;
     margin: 3% auto;
     border-radius: 5px;
     box-shadow: var(--box-shadow);
+}
+
+/* list reviews page */
+
+.reviews {
+    text-decoration: none;
+    color: var(--white);
+}
+
+.reviews:hover {
+    cursor: pointer;
+}
+
+.card {
+    height: 90%;
+    margin-top: 1rem;
+    background-color:  var(--darker);
+    color: var(--light);
+    border-radius: 5px;
 }
