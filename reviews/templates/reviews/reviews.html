@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Car Reviews{% endblock %}
+
+{% block content %}
+    <h1 class="text-center p-2">
+        Latest Car Reviews
+    </h1>
+    <form class="d-flex form text-white" role="search" method="GET" action="{% url 'reviews' %}">
+        <input class="form-control me-2 text-unset" name="q" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn button" type="submit">Search</button>
+    </form>
+    <div class="container d-flex flex-row flex-wrap justify-content-center">
+        {% for review in reviews %}
+            <a href="#" class="reviews" aria-label="Click to view {{review.make}}">
+                <div class="card m-3" style="width: 18rem;">
+                    <img src="{{review.image.url}}" class="card-img-top" alt="{{review.image_alt}}">
+                    <div class="card-body">
+                    <h2 class="card-title">{{review.make|title}} | {{review.model|title}}</h2>
+                    <p class="card-text"><strong>Overall Rate: </strong>{{review.get_overall_display}}</p>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+{% endblock %}
