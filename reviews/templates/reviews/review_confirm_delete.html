@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}Delete {{review.make|title}} Review{% endblock %}
+
+{% block content %}
+    <div class="container text-center">
+        <h1 class="mt-5">Confirm Review Deletion</h1>
+        <div class="d-flex justify-content-center pt-3">
+            <form method="POST" class="text-center mb-5">
+                {% csrf_token %}
+                <p>Are you sure you want to delete review {{ review.make|title }} {{ review.model|title}}?</p>
+                <input type="submit" value="Confirm" class="btn button">
+                <a href="{% url 'home' %}" class="btn button">Cancel</a>
+            </form>
+        </div>
+    </div>
+{% endblock %}

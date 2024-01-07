@@ -41,7 +41,7 @@
                 {% if request.user == review.user %}
                     <div class="text-center">
                         <a href="#" class="btn button">Edit</a>
-                        <a href="#" class="btn button">Delete</a>
+                        <a href="{% url 'delete_review' %}" class="btn button">Delete</a>
                     </div>
                 {% endif %}
         </section>
@@ -70,7 +70,6 @@
                 <div class="addit">
                     <p><strong>Additional: </strong><br> {{ review.additional|safe }}</p>
                 </div>
-
                 <div class="summary">
                     <p><strong>Summary: </strong><br> {{ review.summary|safe }}</p>
                     <p><strong>Overall Rating: </strong> {{ review.get_overall_display }}</p>

@@ -5,8 +5,11 @@ from django.views.generic import (
     DeleteView,
     UpdateView,
 )
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.mixins import (
+    LoginRequiredMixin, UserPassesTestMixin
+)
 from django.db.models import Q
+from django.contrib import messages
 from .models import CarReviewModel
 from .forms import CarReviewModelForm
 
@@ -48,4 +51,22 @@ class AddCarReview(LoginRequiredMixin, CreateView):
 
     def form_valid(self, form):
         form.instance.user = self.request.user
+        messages.success(
+            self.request, 'Your review was successfully submitted!'
+        )
         return super(AddCarReview, self).form_valid(form)
+
+
+class DeleteReview(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """ Delete a view """
+    template_name = 'reviews/review_confirm_delete.html'
+    model = CarReviewModel
+    context_object_name = 'review'
+    success_url = '/reviews/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+    def post(self, request, *args, **kwargs):
+        messages.success(self.request, 'Review successfully deleted!')
+        return super().post(request, *args, **kwargs)
