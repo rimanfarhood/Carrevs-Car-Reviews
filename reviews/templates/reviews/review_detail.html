@@ -40,7 +40,7 @@
             <hr>
                 {% if request.user == review.user %}
                     <div class="text-center">
-                        <a href="#" class="btn button">Edit</a>
+                        <a href="{% url 'edit_review' %}" class="btn button">Edit</a>
                         <a href="{% url 'delete_review' %}" class="btn button">Delete</a>
                     </div>
                 {% endif %}
