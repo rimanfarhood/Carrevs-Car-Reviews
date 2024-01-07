@@ -7,29 +7,32 @@
         <section>
             <h1 class="text-center pt-3">{{review.make|title}}  {{review.model|title}}</h1>
             <p class="posted">Posted by {{review.user}}<br>{{review.posted_date}}</p>
-            <div class="car-info mt-3 p-1">
+            <div class="car-info p-1">
                 <div class="car-img">
                     <img src="{{review.image.url}}" alt="{{review.image_alt}}" class="car-pic">
                 </div>
-                <div class="car-detail m-3">
+                <div class="car-detail mt-3">
                     <div class="details">
                         <p>
                             <strong>Make: </strong> {{ review.make|title }} <br>
-                            <strong>Model Year: </strong> {{ review.year|title }} <br>
-                            <strong>Engine Size: </strong> {{ review.engine_size|title }} <br>
-                            <strong>Transmission: </strong> {{ review.transmission|title }} <br>
-                            <strong>Mileage: </strong> {{ review.mileage|title }} <br>
+                            <strong>Retail Price: </strong>{{ review.price|title }} <br>
                             <strong>Horsepower: </strong> {{ review.hp|title }}hk <br>
+                            <strong>Transmission: </strong><br> {{ review.transmission|title }} <br>
                         </p>
                     </div>
                     <div class="details">
                         <p>
                             <strong>Model: </strong> {{ review.model|title }} <br>
-                            <strong>Condition: </strong> {{ review.condition|title }} <br>
-                            <strong>Fuel Type: </strong> {{ review.fuel|title }} <br>
-                            <strong>Drivetrain: </strong> {{ review.drivetrain|title }} <br>
-                            <strong>Retail Price: </strong> {{ review.price|title }} <br>
+                            <strong>Engine Size: </strong> {{ review.engine_size|title }} <br>
                             <strong>Car Body: </strong> {{ review.car_type|title }} <br>
+                            <strong>Mileage: </strong><br> {{ review.mileage|title }} <br>
+                    </div>
+                    <div class="details">
+                        <p>
+                            <strong>Model Year: </strong> {{ review.year|title }} <br>
+                            <strong>Fuel Type: </strong> {{ review.fuel|title }} <br>
+                            <strong>Drivetrain: </strong><br>{{ review.drivetrain|title }} <br>
+                            <strong>Condition: </strong> {{ review.condition|title }} <br>
                         </p>
                     </div>
                 </div>
@@ -43,29 +46,33 @@
                 {% endif %}
         </section>
         <section>
-            <div class="review-container pt-3">
+            <div class="review-container row row-cols-md-2 pt-3">
                 <div class="ratings">
                     <p>
                         <strong>Driving Experience: </strong> {{ review.get_drivingexp_display }}<br>
                         <strong>Acceleration: </strong> {{ review.get_acceleration_display }}<br>
-                        <strong>Safety: </strong> {{ review.get_safety_display }}<br>
                         <strong>Practicality: </strong> {{ review.get_practicality_display }}<br>
-                        <strong>Interior: </strong> {{ review.get_interior_display }}<br>
-                        <strong>Ergonomics: </strong> {{ review.ergonomics_display }}<br>
                     </p>
                 </div>
-
-                <div class="pros">
-                    <p><strong>Pros: </strong> {{ review.pros|safe }}</p>
-                    <p><strong>Cons: </strong> {{ review.cons|safe }}</p>
+                <div class="ratings">
+                    <p>
+                        <strong>Ergonomics: </strong> {{ review.get_ergonomics_display }}<br>
+                        <strong>Interior: </strong> {{ review.get_interior_display }}<br>
+                        <strong>Safety: </strong> {{ review.get_safety_display }}<br>
+                    </p>
                 </div>
-               
+                <div class="pros">
+                    <p><strong>Pros: </strong><br> {{ review.pros|safe }}</p>
+                </div>
+                <div class="cons">
+                    <p><strong>Cons: </strong><br> {{ review.cons|safe }}</p>
+                </div>
                 <div class="addit">
-                    <p><strong>Additional: </strong> {{ review.additional|safe }}</p>
+                    <p><strong>Additional: </strong><br> {{ review.additional|safe }}</p>
                 </div>
 
                 <div class="summary">
-                    <p><strong>Summary: </strong> {{ review.summary|safe }}</p>
+                    <p><strong>Summary: </strong><br> {{ review.summary|safe }}</p>
                     <p><strong>Overall Rating: </strong> {{ review.get_overall_display }}</p>
                 </div>
             </div>
