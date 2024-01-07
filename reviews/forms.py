@@ -6,8 +6,8 @@ from djrichtextfield.widgets import RichTextWidget
 class CarReviewModelForm(forms.ModelForm):
     class Meta:
         model = CarReviewModel
-        exclude = ['user']
-        fields = '__all__'
+        exclude = ["user"]
+        fields = "__all__"
 
         pros = forms.CharField(widget=RichTextWidget())
         cons = forms.CharField(widget=RichTextWidget())
@@ -32,5 +32,5 @@ class CarReviewModelForm(forms.ModelForm):
             "car_type": "Body Type",
             "image": "Car Image",
             "image_alt": "Describe Image",
-            "drivingexp": "Driving Experience"
+            "drivingexp": "Driving Experience",
         }
