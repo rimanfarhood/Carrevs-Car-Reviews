@@ -1,10 +1,10 @@
 # CARREVS
 
-CARREVS - A Car Review App, a place for car enthusiasts to read and share their car reviews with each other.
+CARREVS - Car Review site, a place for car enthusiasts to read and share their car reviews with each other.
 
 ![Responsive Mockup] ()
 
-Live Version can be accessed here: [CARREVS] ()
+Live Version can be accessed here: [CARREVS](https://carrevs-b0c8f9ee1e33.herokuapp.com/)
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@ The project was developed using a agile methodology, delivering a few small feat
 
 The features were assigned to Milestones (epics), in total 6. Prioritized by labels 'Must have', 'Should have, 'Could have'. To ensure all core requirements were completed first.
 
-Kanban board created using GitHub Projects, can be viewed here - [Project-board] ()
+Kanban board created using GitHub Projects, can be viewed here - [Project-board](https://github.com/users/rimanfarhood/projects/11)
 All stories, with the exception of documentation tasks, have a complete set of acceptance criteria that defines the functionality that signifies completion.
 
 #### Epics 
@@ -63,40 +63,60 @@ Epic for documentation related stories and tasks that are needed to document of 
 
 **Milestone 1 - Base Setup**
 
-- 
-- 
-- 
-- 
-- 
+-As a developer I need to set up the project so that so it's ready to implement features.
+
+-As a developer I need to create a base.html page and structure so that it can be reused for other pages.
+
+-As a developer, i need to create static resources so that CSS, Javscript, icons, and images works on the website.
+
+-As a developer I can create a navbar menu so that users easily can navigate the site on all devices.
+
+-As a user I can find a footer with social media links so that i can visit the sites social media accounts.
+
+
 
 **Milestone 2 - Authentication**
 
-- 
-- 
+-As a developer i need to implement Allauth so that users can sign up and create their car reviews.
+
+-As a website owner I want to have the Allauth pages customized so that the style matches the rest of the site. 
 
 **Milestone 3 - Reviews**
 
-- 
-- 
-- 
-- 
-- 
+-As a user i can add a car review so that i can share it for other users to read.
+
+-As a user I can view all users reviews so that I can read them. 
+
+-As a user I can view a specific review so that I can read it.
+
+-As a user I can edit and update my own reviews, so I Can update the review if i want.
+
+-As a user I can delete my review, if I don't want it 
 
 **Milestone 4 - Additional Pages**
 
-- 
-- 
-- 
-- 
+-As a site owner I want home page so that users can read about the website.
 
-**Milestone 5 - Documentation**
+-As a developer I need to implement a 404 error page to notify users the page they requested could not be found.
 
-- 
-- 
+-As a developer I need create a 403 error page to redirect unauthorized users to prevent them from accessing.
 
-**Milestone 6 - Deployment**
+-As a developer I need to create a 500 error page so that users is notified when an internal server error has occurred.
+ 
 
-- 
+**Milestone 5 - Deployment**
+
+-As a developer I need to deploy the final project to Heroku so that users can visit the live site.
+
+
+**Milestone 6 - Documentation**
+
+-Create a readme and write documentation.
+-Write testing documentation.
+
+- Tasks -Complete readme documentation
+- Complete testing documentation
+
 
 ## The-Scope-Plane
 
@@ -231,3 +251,5 @@ In Heroku
 - 
 - 
 - 
+
+[def]: https://carrevs-b0c8f9ee1e33.herokuapp.com/
