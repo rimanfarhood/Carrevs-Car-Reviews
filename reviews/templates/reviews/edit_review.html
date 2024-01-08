@@ -6,7 +6,7 @@
 <div class="container text-center px-2">
         <h1 class="text-center">Edit Car Review</h1>
         <p class="text-center">Provide the information about the car you're reviewing.</p>
-        <form method="POST" enctype="multipart/form-data" class="row row-cols-md-2 form-review">
+        <form method="POST" enctype="multipart/form-data" class="form-review">
             {% csrf_token %}
             {{ form.media }}
             {{ form|crispy }}

@@ -112,7 +112,6 @@ footer {
     color: var(--light);
     border: 1px solid var(--light);
     background-color: var(--darker);
-    width: 10%;
     margin: 3px;
 }
 
@@ -129,6 +128,7 @@ footer {
     border-radius: 5px;
     box-shadow: var(--box-shadow);
 }
+
 
 /*----------------------- list reviews page */
 
@@ -251,6 +251,12 @@ a.img-container:hover {
 /* Media queries */
 
 @media screen and (min-width: 40em) {
+    .form-review {
+        width: 60%;
+        margin: 3% auto;
+        border-radius: 5px;
+        box-shadow: var(--box-shadow);
+    }
 
     main {
         margin-top: 3em;
