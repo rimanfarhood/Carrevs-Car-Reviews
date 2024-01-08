@@ -358,12 +358,15 @@ For the navbar and headings the Playfair Display font was used and for the body 
 
 ## Technologies
 
-  * HTML, for the Structure.
+  * HTML, the main language used for the structure.
   * CSS, to add the style.
+  * Python, the main programming language used for the application using the Django Framework.
   * JavaScript, to add timeout functionality to toasts.
   * [JSHint](https://jshint.com/), validating js code.
-  * [Gitpod](https://www.gitpod.io/), coding, editing and preview.
-  * [Github](https://github.com), store code and deployment.
+  * [Gitpod](https://www.gitpod.io/), Developed using Gitpod Ide coding, editing and preview.
+  * [Github](https://github.com), source code hosted on Github.
+  * [Heroku](https://www.heroku.com/), used to deploy the application live.
+  * [Uxwing](https://uxwing.com/), used for home icon and social media icons.
   * [Reverso](https://www.reverso.net/spell-checker/english-spelling-grammar/), to check spelling and grammar. 
   * [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/open/), Measuring for responsiveness.
   * [W3C HTML Validator](https://validator.w3.org/#validate_by_input), HTML validation.
@@ -371,15 +374,64 @@ For the navbar and headings the Playfair Display font was used and for the body 
   * [Wave](https://wave.webaim.org/), accessibility evaluation tool.
   * [Am I responsive](https://ui.dev/amiresponsive), mockup image.
   * [Google Fonts](https://fonts.google.com/), fonts.
-  * [Font Awsome](https://fontawesome.com/), icons.
+  * [Font Awesome](https://fontawesome.com/), icons.
   * [Favicon](https://favicon.io/), favicon in tab.
 
 
 **Python Modules**
+ 
+ - Django Class based views ListView, UpdateView, DeleteView, CreateView - Used to create classes to create, read, update and delete.
 
+ - Mixins LoginRequiredMixin, UserPassesTestMixin - Used to enforce login required on views and test user is authorized to perform actions.
+
+ - messages - Used to create messages to the toasts to display feedback to the user upon actions.
 
 
 **External Python Modules**
+
+- asgiref==3.7.2 - Installed as dependency with another package.
+
+- black==23.12.1 - For PEP8 complaint.
+
+- click==8.1.7 - Installed as dependency with another package.
+
+- cloudinary==1.37.0 - Cloundinary set up for image hosting.
+
+- crispy-bootstrap5==2023.10 - to allow bootstrap5 use with crispy forms.
+
+- dj-database-url==2.1.0 = To parse database url for production environment.
+
+- Django==4.2.9 - Framework used to build the application.
+
+- django-allauth==0.53.0 - Used for the authentication system, user accounts sign /in/up/out.
+
+- django-cloudinary-storage==0.3.0 - Storage system to work with cloudinary.
+
+- django-crispy-forms==2.1 - Used to style the forms when rendering.
+
+- django-resized==1.0.2 - Used tp automatically resize images when uploading.
+
+- django-richtextfield==1.6.1 - To create custom charfields and widgets.
+
+- gunicorn==21.2.0 - Server.
+
+- oauthlib==3.2.2 - Installed as dependency with another package.
+
+- pathspec==0.12.1 - Installed as dependency with another package.
+
+- pillow==10.2.0 - Imaging library.
+
+- psycopg2==2.9.9 - Database adapter.
+
+- PyJWT==2.8.0 - Installed as dependency with another package.
+
+- python3-openid==3.2.0 - Installed as dependency with another package.
+
+- requests-oauthlib==1.3.1 - Installed as dependency with another package.
+
+- sqlparse==0.4.4 - Installed as dependency with another package.
+
+- whitenoise==6.6.0 - Used to serve static files directly without use of static resource provider like cloundinary. 
 
 
 ## Testing 
