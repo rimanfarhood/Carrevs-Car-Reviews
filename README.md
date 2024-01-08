@@ -93,13 +93,15 @@ Epic for documentation related stories and tasks that are needed to document of 
 
 -As a user I can delete my review, if I don't want it 
 
+-As a user i would like to receive feedback when add, edit or delete a review as well as sign up/in/out.
+
 **Milestone 4 - Additional Pages**
 
 -As a site owner I want home page so that users can read about the website.
 
 -As a developer I need to implement a 404 error page to notify users the page they requested could not be found.
 
--As a developer I need create a 403 error page to redirect unauthorized users to prevent them from accessing.
+-As a developer I need create a 403 error page to redirect unauthorized users preventing them from accessing a resource or perform an action without the permissions.
 
 -As a developer I need to create a 500 error page so that users is notified when an internal server error has occurred.
  
@@ -127,14 +129,15 @@ Epic for documentation related stories and tasks that are needed to document of 
 
 ## The-Structure-Plane
 
-
 ### Features
 
-**Site Wide**
+#### Site Wide
 
-* Navigation Bar
+**Navigation Bar menu**
 
-  * Full responisve navigation bar including links to Home, reviews, adding review, sign up/in/out.
+USER STORY - As a developer I can create a navbar menu so that users can easily navigate the site on all devices.
+
+  * Full responsive navigation menu displayed on all pages including links to Home, reviews, adding review, sign up/in/out pages.
   * Makes the navigation between the pages easier for the user.
 
 ![Nav Bar]()
@@ -143,54 +146,177 @@ Epic for documentation related stories and tasks that are needed to document of 
 
 ![Dropdown]()
 
-* Footer
+**Footer**
 
-   * Responisve footer soical media icons with links.
+USER STORY - As a user I can find a footer with social media links so that I can visit the site's social media accounts.
+
+   * Responsive footer with social media icons links, displayed on all pages.
 
 ![Footer]()
 
 ![Responsive Footer]()
 
-* Favicon
+**Toast**
 
-    * Site wide favicon included on all pages.
+USER STORY - As a user i would like to receive feedback when add, edit or delete a review as well as sign up/in/out
+
+   * Toast is displayed when user perform any of these actions: 
+      - Sign up
+      - Log in
+      - Log out
+      - Create a review
+      - Edit a review
+      - Delete a review
+
+![Toast]()    
+
+**Home Page**
+
+USER STORY - As a site owner I want a home page so that users can read about the website.
+
+  * Home page with some information about the site
+
+![Home Page]()
+
+![Responsive Home Page]()
+
+**Reviews Page**
+
+USER STORY - As a user I can view all users' reviews so that I can read them.
+
+   * A page with the all the reviews displayed
+   * A search bar is included for users to be able to search for specific reviews
+
+![Reviews Page]()
+
+
+**Add Review Page**
+
+USER STORY - As a user I can add a car review so that I can share it for other users to read.
+
+   * The Add Review page includes a review form
+   * If the user is not logged in they wont be able to access this page instead they will be asked to sign up or in.
+
+![Add Review]()
+
+
+**Review Detail page**
+
+USER STORY - As a user I can view a specific review so that I can read it.
+
+  * Includes the full review with all the details.
+  
+![Review Detail]()
+
+**Edit Review Page**
+
+USER STORY - As a user I can edit and update my own reviews, so I can update the review if I want.
+
+   * If the viewer on the detail page is the logged in review owner they will have a edit button displayed.
+
+![Edit Review]()
+
+**Delete Review page**
+
+USER STORY - As a user I can delete my review if I don't want it.
+
+   * To get to the delete page, the review owner has to be logged in and view their review there will be a delete button displayed.
+   * If the user want to delete the review they will be have to confirm the deletion before.
+
+![Delete page]()
+
+**Error Pages**
+
+**404 error page**
+
+USER STORY - As a developer I need to implement a 404 error page to notify users the page they requested could not be found.
+
+ - A 404 error page is displayed when the users request could not be found. 
+ - An explanation of the error is provided and a link to the home page. 
+
+![404 page]()
+
+**403 error page**
+
+USER STORY - As a developer I need create a 403 error page to redirect unauthorized users preventing them from accessing a resource or perform an action without the permissions
+
+ - A 403 error page is displayed when a unauthorized users is trying to perform an action without the necessary permissions. 
+ - An explanation of the error is provided and a link to the home page. 
+
+![403 page]()
+
+**500 error page**
+
+USER STORY - As a developer I need to create a 500 error page so that users are notified when an internal server error has occurred.
+
+  - A 500 error page is displayed in case of an internal server error occurs.
+  - An explanation of the error is provided and a link to the home page.
+
+![500 page]()
+
+
+**Favicon**
+
+    * Site wide favicon included on all pages was added.
     * The image icon on the tab makes it easier for the user to find the site when having multiple tabs open at the same time. 
 
 ![Favicon]()
 
-* 404 Page
-
-   * A costum made 404 page will be displayed when a broken link is used to navigate.
-   * It will allow the user to comfortably be redirected to the main website. 
-
-![404 Page]()
-
-
 
 ### Features left to implement
 
-- 
-- 
-- 
+If I had more time and or knowledge i would implement these features:
+
+   - Add pagination to the reviews page if the reviews were to many. 
+   - If I had more time I would do change the home page design, with sign up section there. 
+   - The review detail page's layout is not completely done either, I would make it more symmetrical and design the layout more detailed, with sections and more.
+   - I would implement a functionality for users to communicate with each other and like and dislike views.
+   - I would like to implement an about us page with a contact us section. 
+   - Implement a search filter in the reviews page.
+
+I would there is a whole lot more features i would like to implement but this is a few of them. 
 
 
-## Wireframes
 
-**Landing page**
 
-**Reviews page**
+## The-Skeleton-Plane
 
-**Review detail page**
+### Wireframes
 
-**Add review page**
+**Home page**
 
-**Edit review page**
+- Home page
 
-**Sign up page**
 
-**Log in page**
+![Home Page]()
 
-**Log out page**
+- Reviews Page
+
+![Reviews Page]()
+
+- Review detail Page
+
+![Review Detail Page]()
+
+- Add Review Page
+
+![Add Review Page]()
+
+- Edit Review Page
+
+![Edit Page]()
+
+- Sign up page
+
+![Sign up Page]()
+
+- Log in
+
+![Login Page]()
+
+- Log Out
+
+![Logout Page]()
 
 
 ### Database Design
