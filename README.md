@@ -74,7 +74,6 @@ Epic for documentation related stories and tasks that are needed to document of 
 -As a user I can find a footer with social media links so that i can visit the sites social media accounts.
 
 
-
 **Milestone 2 - Authentication**
 
 -As a developer i need to implement Allauth so that users can sign up and create their car reviews.
@@ -120,14 +119,14 @@ Epic for documentation related stories and tasks that are needed to document of 
 - Complete testing documentation
 
 
-## The-Scope-Plane
+## The Scope-Plane
 
 * Responsive Design - Site should be fully functional on all devices from 320px up
 * Hamburger menu for mobile devices
 * Ability to perform CRUD functionality
 * Restricted role based features
 
-## The-Structure-Plane
+## The Structure-Plane
 
 ### Features
 
@@ -277,8 +276,6 @@ If I had more time and or knowledge i would implement these features:
 I would there is a whole lot more features i would like to implement but this is a few of them. 
 
 
-
-
 ## The-Skeleton-Plane
 
 ### Wireframes
@@ -321,7 +318,21 @@ I would there is a whole lot more features i would like to implement but this is
 
 ### Database Design
 
-- 
+- Database designed structure allow CRUD functionality to be available to users with an account registered. The model is the main key to the application, it's connected to the whole site, the home page, the reviews page, the creating and managing reviews.
+
+**Entity Relationship Diagram**
+-created using [Dbeaver]()
+
+![Entity Relationship Diagram]()
+
+### Security
+
+The views are secured by using django auth mixins,LoginRequiredMixin, UserPassesTestMixin. A test function was created to use the mixin and checks were ran to ensure that the user who is trying to access the page is authorized. Any user restricted functionality listed in the features was secured using this method.
+
+Environment variables stored in an env.py for local development. For security purposes to ensure no sensitive information was added the the repository. In production, the variables was added in heroku config vars within the project.
+
+
+
 
 ### Design Color Schemes
 
