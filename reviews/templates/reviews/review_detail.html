@@ -4,6 +4,7 @@
 
 {% block content %}
     <div class="container">
+        <!-- Section for car detail information and image -->
         <section>
             <h1 class="text-center pt-3">{{review.make|title}}  {{review.model|title}}</h1>
             <p class="posted">Posted by {{review.user}}<br>{{review.posted_date}}</p>
@@ -38,6 +39,7 @@
                 </div>
             </div>
             <hr>
+                <!-- Edit and Delete buttons -->
                 {% if request.user == review.user %}
                     <div class="text-center">
                         <a href="{% url 'edit_review' review.id %}" class="btn button">Edit</a>
@@ -45,8 +47,10 @@
                     </div>
                 {% endif %}
         </section>
+
+        <!-- The Review Section -->
         <section>
-            <div class="review-container row row-cols-md-2 pt-3">
+            <div class="review-container row row-cols-lg-2 pt-3">
                 <div class="ratings">
                     <p>
                         <strong>Driving Experience: </strong> {{ review.get_drivingexp_display }}<br>

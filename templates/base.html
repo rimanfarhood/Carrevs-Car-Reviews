@@ -32,8 +32,10 @@
     <title>Carrevs | {% block title %}{% endblock %}</title>
 </head>
 <body>
+    <!-- Navbar -->
     {% include 'includes/header.html' %}
 
+    <!-- Toasts -->
     {% if messages %}
         {% for message in messages %}
         <div class="text-center alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
@@ -43,12 +45,14 @@
         {% endfor %}
     {% endif %}
     
+    <!-- Content -->
     <main>
         {% block content %}
 
         {% endblock %}
     </main>
 
+    <!-- Footer -->
     {% include 'includes/footer.html' %}
 </body>
 </html>

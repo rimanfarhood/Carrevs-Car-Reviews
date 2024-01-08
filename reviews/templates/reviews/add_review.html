@@ -6,12 +6,12 @@
 <div class="container">
         <h1 class="text-center pt-2">Add Car Review</h1>
         <p class="text-center">Provide the information about the car you're, and add your review.</p>
-        <form method="POST" enctype="multipart/form-data" class="row row-cols-lg-3 row-cols-md-2 form-review text-reset">
+        <form method="POST" enctype="multipart/form-data" class="row row-cols-md-2 text-reset">
             {% csrf_token %}
             {{ form.media }}
             {{ form|crispy }}
             <div class="container text-center">
-                <button class="btn button btn m-3" type="submit">Add Car Review</button>
+                <button class="btn button m-3" type="submit">Add Car Review</button>
             </div>
         </form>
 </div>

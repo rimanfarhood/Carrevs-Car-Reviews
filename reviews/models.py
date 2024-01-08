@@ -9,7 +9,9 @@ from django.core.validators import MinValueValidator, MaxValueValidator
 
 current_year = datetime.datetime.now().year
 
-YEAR_MODEL = [(year, str(year)) for year in range(current_year, current_year - 20, -1)]
+YEAR_MODEL = [
+    (year, str(year)) for year in range(current_year, current_year - 20, -1)
+]
 
 FUEL_TYPE = (
     ("petrol", "Petrol"),
@@ -85,27 +87,39 @@ class CarModel(models.Model):
     user = models.ForeignKey(
         User, related_name="review_owner", on_delete=models.CASCADE
     )
-    make = models.CharField(max_length=20, choices=CAR_MAKE, null=False, blank=False)
+    make = models.CharField(
+        max_length=20, choices=CAR_MAKE, null=False, blank=False
+    )
     model = models.CharField(max_length=300, null=False, blank=False)
     year = models.IntegerField(
         choices=YEAR_MODEL, default=current_year, null=False, blank=False
     )
-    fuel = models.CharField(max_length=20, choices=FUEL_TYPE, null=False, blank=False)
-    condition = models.CharField(max_length=5, choices=STATE, null=False, blank=False)
-    engine_size = models.CharField(max_length=10, null=False, blank=False)
+    fuel = models.CharField(
+        max_length=20, choices=FUEL_TYPE, null=False, blank=False
+    )
+    condition = models.CharField(
+        max_length=5, choices=STATE, null=False, blank=False
+    )
+    engine_size = models.CharField(
+        max_length=10, null=False, blank=False
+    )
     transmission = models.CharField(
         max_length=20, choices=GEARBOX, null=False, blank=False
     )
     drivetrain = models.CharField(
         max_length=15, choices=DRIVETRAIN_TYPES, null=False, blank=False
     )
-    mileage = models.CharField(max_length=25, choices=MILES, null=False, blank=False)
+    mileage = models.CharField(
+        max_length=25, choices=MILES, null=False, blank=False
+    )
     price = models.CharField(max_length=15, null=False, blank=False)
     hp = models.IntegerField(
         null=False,
         blank=False,
         validators=[
-            MinValueValidator(66, message="Invalid input, the value is too low"),
+            MinValueValidator(
+                66, message="Invalid input, the value is too low"
+            ),
             MaxValueValidator(2012, message="Invalid input, value to high"),
         ],
     )
