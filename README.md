@@ -24,24 +24,38 @@ Live Version can be accessed here: [CARREVS] ()
 
 The project was developed using a agile methodology, delivering a few small features in sprints. In total there were 3 sprints spaced out over 3 weeks.
 
-The features were assigned to Milestones (epics), in total 6. Prioritized by labels 'Must have', 'Should have, 'Could have'.
+The features were assigned to Milestones (epics), in total 6. Prioritized by labels 'Must have', 'Should have, 'Could have'. To ensure all core requirements were completed first.
 
 Kanban board created using GitHub Projects, can be viewed here - [Project-board] ()
+All stories, with the exception of documentation tasks, have a complete set of acceptance criteria that defines the functionality that signifies completion.
 
 #### Epics 
 
 
 **Milestone 1 - Base Setup**
 
+The base setup epic consists of all stories essential for the application's base setup
+The app wouldn't work without setting up the base first, There for essential to do first.
+
 **Milestone 2 - Authentication**
+
+The authentication procedure involves signing up, logging in, and controlling who receives access.
 
 **Milestone 3 - Reviews**
 
+The reviews epic is for all stories that relate to the creating, deleting, editing and viewing of reviews. This allows for users to sign up and add their own reviews with a simple UI interface.
+
 **Milestone 4 - Additional Pages**
 
-**Milestone 5 - Documentation**
+The additional pages epic is for small pages that did not have enough user stories to justify their own full epics, instead of creating multiple epics for tiny features.
 
-**Milestone 6 - Deployment**
+**Milestone 5 - Deployment**
+
+This epic is for all stories related to deploying the app to heroku, so that the site is live for users.
+
+**Milestone 6 - Documentation**
+
+Epic for documentation related stories and tasks that are needed to document of the application. Aiming to explaining the development stages and necessary information on running, deploying and using the application.
 
 
 #### User Stories
@@ -100,19 +114,18 @@ Kanban board created using GitHub Projects, can be viewed here - [Project-board]
 
 * Navigation Bar
 
-  * Full responisve navigation bar including links to Home, Treatments and Contact pages as well as a link the About Us section on the Home Page.
+  * Full responisve navigation bar including links to Home, reviews, adding review, sign up/in/out.
   * Makes the navigation between the pages easier for the user.
 
-![Nav Bar](https://github.com/rimanfarhood/Chic-Salon/blob/main/assets/images/readme/nav.png)
+![Nav Bar]()
 
-![Nav Bar responsive](https://github.com/rimanfarhood/Chic-Salon/blob/main/assets/images/readme/nav1.png)
+![Nav Bar responsive]()
 
-![Dropdown](https://github.com/rimanfarhood/Chic-Salon/blob/main/assets/images/readme/dropdwon.png)
+![Dropdown]()
 
 * Footer
 
-   * Responisve footer containing three sections, Address with the address to the salon and a phone number, Email section and a Soical Media section contaning to icons with links.
-   * Provides the user with contact information, address and links t our social media plattforms. Where they to see more of our daily work on clients etc.
+   * Responisve footer soical media icons with links.
 
 ![Footer]()
 
