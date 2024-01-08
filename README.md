@@ -332,9 +332,23 @@ The views are secured by using django auth mixins,LoginRequiredMixin, UserPasses
 Environment variables stored in an env.py for local development. For security purposes to ensure no sensitive information was added the the repository. In production, the variables was added in heroku config vars within the project.
 
 
+## The-Surface-Plane
+### Design
+
+### Color Schemes
+
+Main color schemes used for the project is blue
+   - Navy (#071330) background, 
+   - White (#fff) font color in the body.
+   - Mustard yellow (#D99326) to add a bit of colored details, used in navbar to underline the active page, hover text in home page.
+   - Light blue (#99aec2) used in navbar and button hover.
+   - Darker navy (#020a1b) used mainly navbar background color.
+   - The darkest navy shade i used (#000511) for borders and box shadows mostly.
 
 
-### Design Color Schemes
+### Typography
+
+For the navbar and headings the Playfair Display font was used and for the body Merriweather font was used, both imported from Google Fonts.
 
 - 
 
@@ -342,13 +356,24 @@ Environment variables stored in an env.py for local development. For security pu
 
 **Technologies Used**
 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+## Technologies
+
+  * HTML, for the Structure.
+  * CSS, to add the style.
+  * JavaScript, to add timeout functionality to toasts.
+  * [JSHint](https://jshint.com/), validating js code.
+  * [Gitpod](https://www.gitpod.io/), coding, editing and preview.
+  * [Github](https://github.com), store code and deployment.
+  * [Reverso](https://www.reverso.net/spell-checker/english-spelling-grammar/), to check spelling and grammar. 
+  * [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/open/), Measuring for responsiveness.
+  * [W3C HTML Validator](https://validator.w3.org/#validate_by_input), HTML validation.
+  * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/), CSS validation.
+  * [Wave](https://wave.webaim.org/), accessibility evaluation tool.
+  * [Am I responsive](https://ui.dev/amiresponsive), mockup image.
+  * [Google Fonts](https://fonts.google.com/), fonts.
+  * [Font Awsome](https://fontawesome.com/), icons.
+  * [Favicon](https://favicon.io/), favicon in tab.
+
 
 **Python Modules**
 
