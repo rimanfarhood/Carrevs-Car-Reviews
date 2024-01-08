@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@300;400;500&display=swap');
 
 /* Root variables */
 
@@ -168,22 +168,17 @@ footer {
 }
 
 .car-detail {
-    display: flex;
-    justify-content: space-between;
-    gap: 2px;
-}
-
-.details {
-    letter-spacing: 1.1px;
+    width: 100%;
     font-size: 11px;
-    flex-basis: 100%;
 }
 
 /* review section */
 
 .review-container {
+    margin: 2em;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     letter-spacing: 1.5px;
     line-height: 1.8;
 }
@@ -270,7 +265,6 @@ a.img-container:hover {
         height: 3em;
     }
 
-
     .review-cont {
         flex-direction: row;
     }
@@ -282,6 +276,18 @@ a.img-container:hover {
 }
 
 @media screen and (min-width: 62.5em) {
+    .car-info {
+        flex-direction: row;
+    }
+
+    .car-img {
+        width: 70%;
+    }
+
+    .car-detail {
+        width: 30%;
+        padding-left: 2em;
+    }
 
     .form {
         width: 60%;
