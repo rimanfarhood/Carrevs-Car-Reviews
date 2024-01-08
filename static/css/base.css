@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--title);
 }
 
-/* Header */
+/*------------- Header */
 
 .navbar {
     background-color: var(--darker);
@@ -90,7 +90,7 @@ a.nav-link, .navbar-nav .nav-link.active {
     font-weight: 500;
 }
 
-/* Footer */
+/*---------------- Footer */
 
 footer {
     flex-shrink: 0;
@@ -105,13 +105,15 @@ footer {
     margin: 1rem;
 }
 
-/* Buttons */
+/*------------------ Buttons */
 
 .button {
     border-radius: 4px;
     color: var(--light);
     border: 1px solid var(--light);
     background-color: var(--darker);
+    width: 10%;
+    margin: 3px;
 }
 
 .button:hover {
@@ -128,7 +130,7 @@ footer {
     box-shadow: var(--box-shadow);
 }
 
-/* list reviews page */
+/*----------------------- list reviews page */
 
 .reviews {
     text-decoration: none;
@@ -147,7 +149,10 @@ footer {
     border-radius: 5px;
 }
 
-/* review detail page */
+
+/*------------- review detail page */
+
+/* Car info section */
 
 .posted {
     text-align: left;
@@ -174,6 +179,8 @@ footer {
     flex-basis: 100%;
 }
 
+/* review section */
+
 .review-container {
     display: flex;
     flex-direction: column;
@@ -196,13 +203,57 @@ footer {
     height: auto;
 }
 
+/*------------- home page */
+
+/* home page */
+
+.carrevs {
+    line-height: 1.8;
+    
+}
+
+.review-cont {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+a.img-container {
+    position: relative;
+    text-align: center;
+    color: var(--light);
+    margin: 2%;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid var(--light-border);
+    box-shadow: var(--box-shadow);
+}
+
+a.img-container:hover {
+    color: #D99326;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+}
+
+.centered {
+    width: 100%;
+    background-color: #000000c9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* Media queries */
 
 @media screen and (min-width: 40em) {
 
     main {
-        margin-top: 2em;
+        margin-top: 3em;
     }
 
     .logo {
@@ -211,6 +262,16 @@ footer {
 
     .home-icon {
         height: 3em;
+    }
+
+
+    .review-cont {
+        flex-direction: row;
+    }
+
+    .img-container {
+        flex-direction: row;
+        width: 29%;
     }
 }
 

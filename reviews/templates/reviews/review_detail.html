@@ -67,9 +67,11 @@
                 <div class="cons">
                     <p><strong>Cons: </strong><br> {{ review.cons|safe }}</p>
                 </div>
+                {% if review.additional %}
                 <div class="addit">
                     <p><strong>Additional: </strong><br> {{ review.additional|safe }}</p>
                 </div>
+                {% endif %}
                 <div class="summary">
                     <p><strong>Summary: </strong><br> {{ review.summary|safe }}</p>
                     <p><strong>Overall Rating: </strong> {{ review.get_overall_display }}</p>

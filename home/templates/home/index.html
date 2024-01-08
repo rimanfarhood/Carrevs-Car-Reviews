@@ -3,29 +3,26 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="container flex-column">
-    <section class="text-center">
-        <h1 class="main-title mx-auto">Title</h1>
-
-        <p class="pt-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-            exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat. Duis aute irure dolor in reprehenderit 
-            in voluptate velit esse cillum dolore eu fugiat
-            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-            unt in culpa qui officia deserunt mollit
-            anim id est laborum.
+<div class="container test flex-column">
+    <section class="text-center carrevs">
+        <h1 class="main-title mx-auto">CARREVS</h1>
+        <p class="pt-1">
+            The ultimate place for honest car reviews that are straight from the driver's seat.<br>
+            The diverse experiences of our community are what makes our platform thrive,<br>
+            unlike traditional reviews. Explore authentic reviews written by car owners<br>
+            just like you. Join a community of fellow car owners, create an account to <br>
+            share your own reviews!
         </p>
     </section>
     <section>
         <div class="review-cont">
             {% for review in reviews %}
-                <a href="{% url 'review_detail' review.id %}" class="img-container">
-                    <img src="{{review.image.url}}" alt="{{review.image}}" style="width: 100%;">
-                    <div class="centered"><h2>{{review.make|title}} {{review.model|title}}</h2></div>
-                </a>
+            <a href="{% url 'review_detail' review.id %}" class="img-container">
+                <img src="{{review.image.url}}" alt="{{review.image}}" style="width: 100%;">
+                <div class="centered">
+                    <h2>{{review.make|title}} {{review.model|title}}</h2>
+                </div>
+            </a>
             {% endfor %}
         </div>
     </section>
