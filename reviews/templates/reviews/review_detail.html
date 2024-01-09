@@ -63,11 +63,11 @@
             </div>
             <div class="pros">
                 <h2 class="mb-2">Pro's</h2>
-                <p>{{ review.pros|safe }}</p>
+                {{ review.pros|safe }}
             </div>
             <div class="cons">
                 <h2 class="mb-2">Con's</h2>
-                <p>{{ review.cons|safe }}</p>
+                {{ review.cons|safe }}
             </div>
             {% if review.additional %}
             <div class="addit">
@@ -76,8 +76,8 @@
             </div>
             {% endif %}
             <div class="summary">
-                <h2 class="mb-2">Summary</h2>
-                <p>{{ review.summary|safe }}</p>
+                <h2>Summary</h2>
+                {{ review.summary|safe }}
                 <p><strong>Overall Rating: </strong> {{ review.get_overall_display }}</p>
             </div>
         </div>

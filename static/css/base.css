@@ -169,7 +169,11 @@ footer {
 
 .car-detail {
     width: 100%;
+    display: flex;
+    flex-direction: row;
     font-size: 11px;
+    gap: 0.5em;
+    justify-content: center;
 }
 
 /* review section */
@@ -183,8 +187,10 @@ footer {
     line-height: 1.8;
 }
 
-.ratings, .pros, .addit, .summary {
+.ratings, .pros, .addit, .cons, .summary {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .car-img {
@@ -299,14 +305,6 @@ a.img-container:hover {
 
     .review-container {
         flex-direction: row;
+        align-items: flex-start;
     }
-
-    .ratings, .pros, .cons {
-        width: 25%;
-    }
-
-    .addit, .summary {
-        width: 50%;
-    }
-
 }
