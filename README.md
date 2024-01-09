@@ -443,22 +443,7 @@ Test file
 - Steps
 Before deploying to Heroku
 
-1. Add list of dependencies to the requirements.txt file
-   - To create list use this command in terminal: 'pip3 > freeze requirements.txt' and the list will be added.
-   - Commit and push
 
-In Heroku
-
-- In dashboard Click 'Create new app'
-- Name app and choose region, click create
-- Go to settings then to config vars
-   
-   
-- Go to deploy and select github and confirm
-- search for repository
-- click on connect
-- select a deployment method
-- deploy!
 
 ## Credits
 
