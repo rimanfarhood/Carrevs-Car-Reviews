@@ -444,6 +444,9 @@ Test file
 Before deploying to Heroku
 
 
+## Note
+
+There seems to be a caching issue with Cloudinary urls at times, causing the images not to load.
 
 ## Credits
 
