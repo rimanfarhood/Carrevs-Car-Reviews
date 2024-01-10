@@ -38,6 +38,13 @@ main {
     flex: 1 0 auto;
 }
 
+.alert {
+    width: 50%;
+    background-color: var(--color);
+    color: var(--darkest);
+    margin: 3% auto;
+}
+
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
