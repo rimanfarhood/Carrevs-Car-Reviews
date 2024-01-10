@@ -164,7 +164,7 @@ USER STORY - As a developer I can create a navbar menu so that users can easily 
   * Full responsive navigation menu displayed on all pages including links to Home, reviews, adding review, sign up/in/out pages.
   * Makes the navigation between the pages easier for the user.
 
-![Nav Bar]()
+![Nav Bar](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/navdt.png)
 
 
 **Footer**
@@ -173,7 +173,7 @@ USER STORY - As a user I can find a footer with social media links so that I can
 
    * Responsive footer with social media icons links, displayed on all pages.
 
-![Footer]()
+![Footer](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/footer.png)
 
 
 **Toast**
@@ -188,7 +188,7 @@ USER STORY - As a user i would like to receive feedback when add, edit or delete
       - Edit a review
       - Delete a review
 
-![Toast]()    
+![Toast](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/toast.png)    
 
 **Home Page**
 
@@ -196,7 +196,7 @@ USER STORY - As a site owner I want a home page so that users can read about the
 
   * Home page with some information about the site
 
-![Home Page]()
+![Home Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/homepg.png)
 
 
 **Reviews Page**
@@ -206,7 +206,7 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
    * A page with the all the reviews displayed
    * A search bar is included for users to be able to search for specific reviews
 
-![Reviews Page]()
+![Reviews Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/reviews.png)
 
 
 **Add Review Page**
@@ -216,7 +216,11 @@ USER STORY - As a user I can add a car review so that I can share it for other u
    * The Add Review page includes a review form
    * If the user is not logged in they wont be able to access this page instead they will be asked to sign up or in.
 
-![Add Review]()
+![Add Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/addrv1.png)
+![Add Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/addrv2.png)
+![Add Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/addrv3.png)
+![Add Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/addrv4.png)
+![Add Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/addrv5.png)
 
 
 **Review Detail page**
@@ -225,7 +229,7 @@ USER STORY - As a user I can view a specific review so that I can read it.
 
   * Includes the full review with all the details.
   
-![Review Detail]()
+![Review Detail](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/detail.png)
 
 **Edit Review Page**
 
@@ -233,7 +237,9 @@ USER STORY - As a user I can edit and update my own reviews, so I can update the
 
    * If the viewer on the detail page is the logged in review owner they will have a edit button displayed.
 
-![Edit Review]()
+![Edit Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/edit.png)
+![Edit Button](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/edittbn.png)
+
 
 **Delete Review page**
 
@@ -242,7 +248,9 @@ USER STORY - As a user I can delete my review if I don't want it.
    * To get to the delete page, the review owner has to be logged in and view their review there will be a delete button displayed.
    * If the user want to delete the review they will be have to confirm the deletion before.
 
-![Delete page]()
+![Delete page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/confirmdeletion.png)
+![Delete Button](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/edit.png)
+
 
 **Error Pages**
 
@@ -305,35 +313,20 @@ I would there is a whole lot more features i would like to implement but this is
 - Home page
 
 
-![Home Page]()
+![Home Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/home.png)
 
 - Reviews Page
 
-![Reviews Page]()
+![Reviews Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/reviews.png)
+![Reviews Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/reviews-md.png)
 
 - Review detail Page
 
-![Review Detail Page]()
+![Review Detail Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/carinfo.png)
 
 - Add Review Page
 
-![Add Review Page]()
-
-- Edit Review Page
-
-![Edit Page]()
-
-- Sign up page
-
-![Sign up Page]()
-
-- Log in
-
-![Login Page]()
-
-- Log Out
-
-![Logout Page]()
+![Add Review Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/form.png)
 
 
 ### Database Design
@@ -341,9 +334,9 @@ I would there is a whole lot more features i would like to implement but this is
 - Database designed structure allow CRUD functionality to be available to users with an account registered. The model is the main key to the application, it's connected to the whole site, the home page, the reviews page, the creating and managing reviews.
 
 **Entity Relationship Diagram**
--created using [Dbeaver]()
+-created using [Dbeaver](https://dbeaver.io/)
 
-![Entity Relationship Diagram]()
+![Entity Relationship Diagram](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/databasedesign.png)
 
 ### Security
 
@@ -485,6 +478,8 @@ In Heroku
         - Click connect
    - Then scroll down to deploy manual and select main branch
    - Click deploy
+
+Usually takes a minute or two before the app is deployed, when it is done click on View.
 
 
 ## Fork
