@@ -12,7 +12,6 @@ Live Version can be accessed here: [CARREVS](https://carrevs-b0c8f9ee1e33.heroku
 
 - [CARREVS](#carrevs)
   - [Table of Contents](#table-of-contents)
-    - [Table of Contents](#table-of-contents)
 - [User-Experience-Design](#user-experience-design)
     - [Site-Goals](#site-goals)
     - [Agile Planning](#agile-planning)
@@ -33,11 +32,9 @@ Live Version can be accessed here: [CARREVS](https://carrevs-b0c8f9ee1e33.heroku
   - [Technologies](#technologies)
   - [Testing](#testing)
   - [Deployment](#deployment)
-    - [Version Control](#version-control)
     - [Heroku Deployment](#heroku-deployment)
     - [Run Locally](#run-locally)
     - [Fork Project](#fork-project)
-  - [Note](#note)
   - [Credits](#credits)
 
 
@@ -275,7 +272,7 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
    * If the user want to delete the review they will be have to confirm the deletion before.
 
 ![Delete page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/confirmdeletion.png)
-![Delete Button](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/edit.png)
+![Delete Button](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/editbtn.png)
 
 
 **Error Pages**
@@ -539,10 +536,15 @@ Usually takes a minute or two before the app is deployed, when it is done click 
 ## Creating a Local Clone
 
 1. Navigate to the GitHub repository
+
 2. Click on the "Code" drop-down button.
+
 3. Choose local and HTTPS you will have a link copy that URL
+
 4. If wanted, change the current working directory in GitPod to the location desired.
+
 5. Type "git clone" and paste the URL from GitHub.
+
 6. Press "Enter" and the local clone will be create.
 
 --- 
