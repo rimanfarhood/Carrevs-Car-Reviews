@@ -69,8 +69,9 @@ a {
 }
 
 
-a.nav-link, .navbar-nav .nav-link.active {
+a.nav-link, .navbar-nav, .nav-link.active {
     color: var(--light);
+    font-style: normal;
     font-family: var(--body);
     letter-spacing: 0.5px;
     --bs-nav-link-hover-color: none;
@@ -78,6 +79,7 @@ a.nav-link, .navbar-nav .nav-link.active {
 
 .logo {
     font-family: var(--title);
+    font-style: normal;
     font-weight: 500;
     font-size: 2.2em;
     padding-left: 5px;
@@ -92,6 +94,7 @@ a.nav-link, .navbar-nav .nav-link.active {
 
 .active {
     color: var(--light-base);
+    --bs-navbar-active-color: var(--light-base);
     border-bottom: 1px solid var(--color);
     font-weight: 500;
 }
@@ -178,7 +181,7 @@ footer {
     display: flex;
     flex-direction: row;
     font-size: 11px;
-    gap: 0.5em;
+    gap: 1em;
     justify-content: center;
 }
 
@@ -265,6 +268,10 @@ a.img-container:hover {
         box-shadow: var(--box-shadow);
     }
 
+    .car-detail {
+    align-items: flex-end;
+    }
+
     main {
         margin-top: 3em;
     }
@@ -312,5 +319,6 @@ a.img-container:hover {
     .review-container {
         flex-direction: row;
         align-items: flex-start;
+        gap: 1em 
     }
 }
