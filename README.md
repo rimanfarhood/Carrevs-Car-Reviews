@@ -2,9 +2,11 @@
 
 CARREVS - Car Review site, a place for car enthusiasts to read and share their car reviews with each other.
 
-![Responsive Mockup]()
+![Responsive Mockup](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/amiresponsive.png)
 
 Live Version can be accessed here: [CARREVS](https://carrevs-b0c8f9ee1e33.herokuapp.com/)
+
+---
 
 ## Table of Contents
 
@@ -39,11 +41,17 @@ Live Version can be accessed here: [CARREVS](https://carrevs-b0c8f9ee1e33.heroku
   - [Credits](#credits)
 
 
+---
+
 # User-Experience Design
+
+
 
 ### Site Goals
 
  The goal is to provide a place where car enthusiasts can share their opinions and experience about cars with each other. And for car buyers to read other peoples reviews about a car they might want purchase.
+
+---
 
 ### Agile Methodology
 
@@ -53,6 +61,8 @@ The features were assigned to Milestones (epics), in total 6. Prioritized by lab
 
 Kanban board created using GitHub Projects, can be viewed here - [Project-board](https://github.com/users/rimanfarhood/projects/11)
 All stories, with the exception of documentation tasks, have a complete set of acceptance criteria that defines the functionality that signifies completion.
+
+---
 
 #### Epics 
 
@@ -82,7 +92,7 @@ This epic is for all stories related to deploying the app to heroku, so that the
 
 Epic for documentation related stories and tasks that are needed to document of the application. Aiming to explaining the development stages and necessary information on running, deploying and using the application.
 
-
+---
 #### User Stories
 
 
@@ -143,13 +153,19 @@ Epic for documentation related stories and tasks that are needed to document of 
 - Tasks -Complete readme documentation
 - Complete testing documentation
 
+---
 
 ## The Scope-Plane
 
-* Responsive Design - Site should be fully functional on all devices from 320px up
-* Hamburger menu for mobile devices
-* Ability to perform CRUD functionality
-* Restricted role based features
+-Responsive Design - Site should be fully functional on all devices from 320px up
+
+-Hamburger menu for mobile devices
+
+-Ability to perform CRUD functionality
+
+-Restricted role based features
+
+---
 
 ## The Structure-Plane
 
@@ -166,6 +182,7 @@ USER STORY - As a developer I can create a navbar menu so that users can easily 
 
 ![Nav Bar](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/navdt.png)
 
+--- 
 
 **Footer**
 
@@ -175,6 +192,7 @@ USER STORY - As a user I can find a footer with social media links so that I can
 
 ![Footer](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/footer.png)
 
+---
 
 **Toast**
 
@@ -190,6 +208,8 @@ USER STORY - As a user i would like to receive feedback when add, edit or delete
 
 ![Toast](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/toast.png)    
 
+---
+
 **Home Page**
 
 USER STORY - As a site owner I want a home page so that users can read about the website.
@@ -198,6 +218,7 @@ USER STORY - As a site owner I want a home page so that users can read about the
 
 ![Home Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/homepg.png)
 
+---
 
 **Reviews Page**
 
@@ -208,6 +229,7 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
 
 ![Reviews Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/reviews.png)
 
+---
 
 **Add Review Page**
 
@@ -222,6 +244,7 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
 ![Add Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/addrv4.png)
 ![Add Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/addrv5.png)
 
+--- 
 
 **Review Detail page**
 
@@ -230,6 +253,8 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
   * Includes the full review with all the details.
   
 ![Review Detail](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/detail.png)
+
+---
 
 **Edit Review Page**
 
@@ -240,6 +265,7 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
 ![Edit Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/edit.png)
 ![Edit Button](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/editbtn.png)
 
+---
 
 **Delete Review page**
 
@@ -284,11 +310,11 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
 
 **Favicon**
 
-    * Site wide favicon included on all pages was added.
-    * The image icon on the tab makes it easier for the user to find the site when having multiple tabs open at the same time. 
+   Site wide favicon included on all pages was added.
+   The image icon on the tab makes it easier for the user to find the site when having multiple tabs open at the same time. 
 
 
-
+---
 
 ### Features left to implement
 
@@ -303,6 +329,7 @@ If I had more time and or knowledge i would implement these features:
 
 I would there is a whole lot more features i would like to implement but this is a few of them. 
 
+---
 
 ## The-Skeleton-Plane
 
@@ -315,19 +342,25 @@ I would there is a whole lot more features i would like to implement but this is
 
 ![Home Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/home.png)
 
+---
 - Reviews Page
 
 ![Reviews Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/reviews.png)
 ![Reviews Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/reviews-md.png)
 
+---
+
 - Review detail Page
 
 ![Review Detail Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/carinfo.png)
+
+---
 
 - Add Review Page
 
 ![Add Review Page](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_wireframes/form.png)
 
+---
 
 ### Database Design
 
@@ -339,17 +372,21 @@ I would there is a whole lot more features i would like to implement but this is
 
 ![Entity Relationship Diagram](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/databasedesign.png)
 
+---
+
 ### Security
 
 The views are secured by using django auth mixins,LoginRequiredMixin, UserPassesTestMixin. A test function was created to use the mixin and checks were ran to ensure that the user who is trying to access the page is authorized. Any user restricted functionality listed in the features was secured using this method.
 
-Environment variables stored in an env.py for local development. For security purposes to ensure no sensitive information was added the the repository. In production, the variables was added in heroku config vars within the project.
+The environment variables stored in an env.py for local development. For security purposes to ensure no sensitive information was added the the repository. In production, the variables was added in heroku config vars within the project.
 
+---
 
 ## The-Surface-Plane
+
 ### Design
 
-### Color Schemes
+#### Color Schemes
 
 Main color schemes used for the project is blue
    - Navy (#071330) background, 
@@ -360,10 +397,11 @@ Main color schemes used for the project is blue
    - The darkest navy shade i used (#000511) for borders and box shadows mostly.
 
 
-### Typography
+#### Typography
 
 For the navbar and headings the Playfair Display font was used and for the body Merriweather font was used, both imported from Google Fonts.
 
+---
 
 ## Technologies 
 
@@ -389,6 +427,7 @@ For the navbar and headings the Playfair Display font was used and for the body 
   * [Font Awesome](https://fontawesome.com/), icons.
   * [Favicon](https://favicon.io/), favicon in tab.
 
+---
 
 **Python Modules**
  
@@ -398,6 +437,7 @@ For the navbar and headings the Playfair Display font was used and for the body 
 
  - messages - Used to create messages to the toasts to display feedback to the user upon actions.
 
+---
 
 **External Python Modules**
 
@@ -445,10 +485,13 @@ For the navbar and headings the Playfair Display font was used and for the body 
 
 - whitenoise==6.6.0 - Used to serve static files directly without use of static resource provider like cloundinary. 
 
+---
 
 ## Testing 
 
 Testing file can be viewed here - [Testing](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/TESTING.md)
+
+---
 
 ## Deployment
 
@@ -481,6 +524,7 @@ In Heroku
 
 Usually takes a minute or two before the app is deployed, when it is done click on View.
 
+---
 
 ## Fork
 
@@ -489,6 +533,8 @@ Usually takes a minute or two before the app is deployed, when it is done click 
 2. On the top right of the page under the header, click the fork button.
 
 3. Now that will create a duplicate of the full project in your GitHub Repository.
+
+---
 
 ## Creating a Local Clone
 
@@ -499,7 +545,7 @@ Usually takes a minute or two before the app is deployed, when it is done click 
 5. Type "git clone" and paste the URL from GitHub.
 6. Press "Enter" and the local clone will be create.
 
-
+--- 
 ## Credits
 
 - Django recipe tutorial how to build a crud app with django on youtube by [Dee mc - click to view](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy)
@@ -507,6 +553,8 @@ Usually takes a minute or two before the app is deployed, when it is done click 
 - How to create a subclass model [Click here to view](https://plainenglish.io/blog creating-reusable-models-with-django-and-mixins-2126c5f11eac#show-me-some-code) 
 
 - Followed these recommendations [CI](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit#heading=h.5s9novsydyp1) 
+
+- I think There for I blog, for adding toast [CI lms](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2/courseware/b31493372e764469823578613d11036b/ae7923cfce7f4653a3af9f51825d2eba/)
 
 media
 - Here I found the main color #071330 used in the website - [Canva color pallettes](https://www.canva.com/colors/color-palettes/mountain-haze/)
