@@ -238,7 +238,7 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
    * If the viewer on the detail page is the logged in review owner they will have a edit button displayed.
 
 ![Edit Review](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/edit.png)
-![Edit Button](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/edittbn.png)
+![Edit Button](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/editbtn.png)
 
 
 **Delete Review page**
@@ -364,12 +364,10 @@ Main color schemes used for the project is blue
 
 For the navbar and headings the Playfair Display font was used and for the body Merriweather font was used, both imported from Google Fonts.
 
-- 
 
 ## Technologies 
 
 **Technologies Used**
-
 
   * HTML, the main language used for the structure.
   * CSS, to add the style.
@@ -378,6 +376,7 @@ For the navbar and headings the Playfair Display font was used and for the body 
   * [JSHint](https://jshint.com/), validating js code.
   * [Gitpod](https://www.gitpod.io/), Developed using Gitpod Ide coding, editing and preview.
   * [Github](https://github.com), source code hosted on Github.
+  * [Python Linter CI](https://pep8ci.herokuapp.com/), to validation python code.
   * [Heroku](https://www.heroku.com/), used to deploy the application live.
   * [Uxwing](https://uxwing.com/), used for home icon and social media icons.
   * [Reverso](https://www.reverso.net/spell-checker/english-spelling-grammar/), to check spelling and grammar. 
@@ -449,7 +448,7 @@ For the navbar and headings the Playfair Display font was used and for the body 
 
 ## Testing 
 
-Test file
+Testing file can be viewed here - [Testing](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/TESTING.md)
 
 ## Deployment
 
@@ -500,14 +499,16 @@ Usually takes a minute or two before the app is deployed, when it is done click 
 5. Type "git clone" and paste the URL from GitHub.
 6. Press "Enter" and the local clone will be create.
 
-## Note
-
-There seems to be a caching issue with Cloudinary urls at times, causing the images not to load.
 
 ## Credits
 
-- 
-- 
-- 
+- Django recipe tutorial how to build a crud app with django on youtube by [Dee mc - click to view](https://www.youtube.com/watch?v=sBjbty691eI&list=PLXuTq6OsqZjbCSfiLNb2f1FOs8viArjWy)
+
+- How to create a subclass model [Click here to view](https://plainenglish.io/blog creating-reusable-models-with-django-and-mixins-2126c5f11eac#show-me-some-code) 
+
+- Followed these recommendations [CI](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit#heading=h.5s9novsydyp1) 
+
+media
+- Here I found the main color #071330 used in the website - [Canva color pallettes](https://www.canva.com/colors/color-palettes/mountain-haze/)
 
 [def]: https://carrevs-b0c8f9ee1e33.herokuapp.com/
