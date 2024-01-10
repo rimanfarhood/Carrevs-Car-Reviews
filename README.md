@@ -459,8 +459,34 @@ Test file
 
 ## Deployment
 
+Project deployed to Heroku
+
 - Steps
 Before deploying to Heroku
+
+   - Freeze requirements and push to GitHub
+
+In Heroku
+
+   - Navigate to Heroku's website and create an account or log in
+   - Click on the 'new' button in the dashboard
+   - Select Create New App
+   - Name app and choose region 
+   - Click Create app 
+   - Go to app settings 
+   - Click Reveal Config Vars
+     Add these config vars: 
+      - SECRET_KEY = (your secret key)
+      - DATABASE_URL = (your database url)
+      - CLOUDINARY_URL = (your cloudinary url)
+   - Then navigate to the deploy tab
+   - Select connect to GitHub
+        - Search for your repository
+        - Click connect
+   - Then scroll down to deploy manual and select main branch
+   - Click deploy
+
+
 
 
 ## Fork
