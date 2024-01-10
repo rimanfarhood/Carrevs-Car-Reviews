@@ -2,14 +2,14 @@
 
 CARREVS - Car Review site, a place for car enthusiasts to read and share their car reviews with each other.
 
-![Responsive Mockup] ()
+![Responsive Mockup]()
 
 Live Version can be accessed here: [CARREVS](https://carrevs-b0c8f9ee1e33.herokuapp.com/)
 
 ## Table of Contents
 
-- [CARREVS] (#carrevs)
-  - [Table of Contents] (#table-of-contents)
+- [CARREVS](#carrevs)
+  - [Table of Contents](#table-of-contents)
     - [Table of Contents](#table-of-contents)
 - [User-Experience-Design](#user-experience-design)
     - [Site-Goals](#site-goals)
@@ -211,7 +211,7 @@ USER STORY - As a user I can view all users' reviews so that I can read them.
 
 **Add Review Page**
 
-USER STORY - As a user I can add a car review so that I can share it for other users to read.
+     USER STORY - As a user I can add a car review so that I can share it for other users to read.
 
    * The Add Review page includes a review form
    * If the user is not logged in they wont be able to access this page instead they will be asked to sign up or in.
@@ -225,7 +225,7 @@ USER STORY - As a user I can add a car review so that I can share it for other u
 
 **Review Detail page**
 
-USER STORY - As a user I can view a specific review so that I can read it.
+     USER STORY - As a user I can view a specific review so that I can read it.
 
   * Includes the full review with all the details.
   
@@ -233,7 +233,7 @@ USER STORY - As a user I can view a specific review so that I can read it.
 
 **Edit Review Page**
 
-USER STORY - As a user I can edit and update my own reviews, so I can update the review if I want.
+     USER STORY - As a user I can edit and update my own reviews, so I can update the review if I want.
 
    * If the viewer on the detail page is the logged in review owner they will have a edit button displayed.
 
@@ -243,7 +243,7 @@ USER STORY - As a user I can edit and update my own reviews, so I can update the
 
 **Delete Review page**
 
-USER STORY - As a user I can delete my review if I don't want it.
+     USER STORY - As a user I can delete my review if I don't want it.
 
    * To get to the delete page, the review owner has to be logged in and view their review there will be a delete button displayed.
    * If the user want to delete the review they will be have to confirm the deletion before.
@@ -256,30 +256,30 @@ USER STORY - As a user I can delete my review if I don't want it.
 
 **404 error page**
 
-USER STORY - As a developer I need to implement a 404 error page to notify users the page they requested could not be found.
+     USER STORY - As a developer I need to implement a 404 error page to notify users the page they requested could not be found.
 
  - A 404 error page is displayed when the users request could not be found. 
  - An explanation of the error is provided and a link to the home page. 
 
-![404 page]()
+
 
 **403 error page**
 
-USER STORY - As a developer I need create a 403 error page to redirect unauthorized users preventing them from accessing a resource or perform an action without the permissions
+     USER STORY - As a developer I need create a 403 error page to redirect unauthorized users preventing them from accessing a resource or perform an action without the permissions
 
  - A 403 error page is displayed when a unauthorized users is trying to perform an action without the necessary permissions. 
  - An explanation of the error is provided and a link to the home page. 
 
-![403 page]()
+
 
 **500 error page**
 
-USER STORY - As a developer I need to create a 500 error page so that users are notified when an internal server error has occurred.
+     USER STORY - As a developer I need to create a 500 error page so that users are notified when an internal server error has occurred.
 
   - A 500 error page is displayed in case of an internal server error occurs.
   - An explanation of the error is provided and a link to the home page.
 
-![500 page]()
+
 
 
 **Favicon**
@@ -287,7 +287,7 @@ USER STORY - As a developer I need to create a 500 error page so that users are 
     * Site wide favicon included on all pages was added.
     * The image icon on the tab makes it easier for the user to find the site when having multiple tabs open at the same time. 
 
-![Favicon]()
+
 
 
 ### Features left to implement
@@ -334,6 +334,7 @@ I would there is a whole lot more features i would like to implement but this is
 - Database designed structure allow CRUD functionality to be available to users with an account registered. The model is the main key to the application, it's connected to the whole site, the home page, the reviews page, the creating and managing reviews.
 
 **Entity Relationship Diagram**
+
 -created using [Dbeaver](https://dbeaver.io/)
 
 ![Entity Relationship Diagram](https://github.com/rimanfarhood/Carrevs-Car-Reviews/blob/main/docs/readme_images/databasedesign.png)
